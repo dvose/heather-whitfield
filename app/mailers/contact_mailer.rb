@@ -9,6 +9,6 @@ class ContactMailer < ActionMailer::Base
   def send_contact(contact)
     @contact = contact
 
-    mail to: "dtnvose@gmail.com", subject: "[Heather Resume] Contact From " + @contact.name
+    mail to: "heatherwhitfield550@gmail.com", subject: "[Personal Website] Contact From " + @contact.name
   end
 end

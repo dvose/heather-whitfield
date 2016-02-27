@@ -3,11 +3,9 @@
 <head>
   		<!-- CHANGE TITLE AND META ACCORDINGLY -->
 		<title>Heather Whitfield</title>
-		<meta name="description" content="Faiz Malkani, Designer and Developer for Android and the Web">
-		<meta name="keywords" content="faiz, malkani, android, ui, ux, frontend">
-		<meta name="copyright" content="Copyright © 2014 Faiz Malkani. All Rights Reserved.">
-		<meta name="author" content="Faiz Malkani">
-		<meta name="theme-color" content="#ffffff">
+		<meta name="description" content="Heather Whitfield - Director/Stage Manager">
+		<meta name="keywords" content="heather, whitfield, stage, manager, georgia, atlanta, theatre">
+		<meta name="author" content="Dustin Vose">
 		<meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/polymer/0.5.6/polymer.min.js"></script>
@@ -86,6 +84,7 @@
 			</div>	
 		</div>
 		<script>
+			
 			$(function()
 			{	
 				$('.carousel').slick({
@@ -102,7 +101,7 @@
 		    if(data['status'] == "error"){
 		    	var message = document.createElement('div');
 		    	message.className = 'alert alert-danger';
-		    	message.innerHTML = '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' + data['message'];
+		    	message.innerHTML = data['message'];
 		  			
 		    	$('#result').append(message);
 		    }
@@ -110,7 +109,7 @@
 		     else if(data['status'] == "success"){
 		    	var message = document.createElement('div');
 		    	message.className = 'alert alert-success';
-		    	message.innerHTML = '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' + data['message'];
+		    	message.innerHTML = 'data['message'];
 		  			
 		    	$('#result').append(message);
 		    }
