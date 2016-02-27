@@ -1,0 +1,284 @@
+<div class="content">
+			
+			<!-- OTHER APPS BY YOU -->
+			<div class="wow fadeInUp content-works carousel">
+				<% @screenshots.each do |screenshot| %>
+					<div class="screenshot-item">
+						<a href="<%= image_path "screenshots/#{screenshot.split('/').last}"%>" data-featherlight="image">
+   							<%= image_tag "screenshots/#{screenshot.split('/').last}" %>
+   						</a>
+   					</div>
+ 				<% end %>
+      	    </div>
+
+		<!-- APP DETAILS -->
+		<div class="wow fadeInUp content-card" style="margin-top: 0;">
+     		<span class="text-subtitle" style="font-size: 2.5em; font-weight: 300; color: #333">Selected Experience</span>
+			<br><br>
+			<div>
+				<div class="company">
+					University of Georgia
+				</div>
+				<div class="row">
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-5">
+								<%= image_tag "posters/hedda-gabler.jpg", class: "experience-poster"%>
+							</div>
+							<div class="col-md-7">
+								<div class="experience-title">Hedda Gabler</div>
+								<div class="experience-details">Year: 2014</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Assistant Stage Manager
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-5">
+								<%= image_tag "posters/sweeney-todd.jpg", class: "experience-poster"%>
+							</div>
+							<div class="col-md-7">
+								<div class="experience-title">Sweeney Todd</div>
+								<div class="experience-details">Year: 2016</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Costume Shop
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-5">
+								<%= image_tag "posters/mandrake.jpg", class: "experience-poster"%>
+							</div>
+							<div class="col-md-7">
+								<div class="experience-title">The Mandrake</div>
+								<div class="experience-details">Year: 2016</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Costume Shop
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<hr/>
+				<div class="company">
+					Thalian Blackfriars
+				</div>
+				
+				<!--long item-->
+				<div class="row">
+					<div class="experience-item-long col-md-3">
+						<div class="row">
+								<%= image_tag "posters/10min.jpg", class: "experience-poster-long"%>
+						</div>
+							<div class="row">
+								<div class="experience-title" style="padding:0 10px;">10 Minute Play Festival</div>
+								<div class="experience-details" style="padding:0 10px;">Year: 2015</div>
+								<div class="experience-details" style="padding:0 10px;">
+								<br/>
+									Title: 
+									<br/>Stage Manager
+									<br/>Light Board Operator
+								</div>
+							</div>
+						</div>
+						
+					<div class="experience-item-long col-md-3">
+						<div class="row">
+								<%= image_tag "posters/dry-land.jpg", class: "experience-poster-long"%>
+						</div>
+							<div class="row">
+								<div class="experience-title" style="padding:0 10px;">Dry Land</div>
+								<div class="experience-details" style="padding:0 10px;">Year: 2016</div>
+								<div class="experience-details" style="padding:0 10px;">
+								<br/>
+									Title: 
+									<br/>Stage Manager
+								</div>
+								<br/>
+							</div>
+						</div>		
+				</div>	
+				<hr/>
+				<div class="company">
+					Black Theatrical Ensemble
+				</div>
+				<div class="row">
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-5">
+								<%= image_tag "posters/aida.jpg", class: "experience-poster"%>
+							</div>
+							<div class="col-md-7">
+								<div class="experience-title">Aida</div>
+								<div class="experience-details">Year: 2016</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Technical Director
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<hr/>
+				<div class="company">
+					Rose of Athens Theatre
+				</div>
+				<div class="row">
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-5">
+								<%= image_tag "posters/charlottes-web.jpg", class: "experience-poster"%>
+							</div>
+							<div class="col-md-7">
+								<div class="experience-title">Charlotte’s Webb</div>
+								<div class="experience-details">Year: 2014</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Stage Manager
+									<br/>Light board operator
+									<br/>Sound board operator
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+					
+				<hr/>
+				<div class="company">
+					Piedmont College
+				</div>
+				<div class="row">
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-5">
+								<%= image_tag "posters/anything-goes.jpg", class: "experience-poster"%>
+							</div>
+							<div class="col-md-7">
+								<div class="experience-title">Anything Goes</div>
+								<div class="experience-details">Year: 2012</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Assistant Stage Manager
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-5">
+								<%= image_tag "posters/pippin.jpg", class: "experience-poster"%>
+							</div>
+							<div class="col-md-7">
+								<div class="experience-title">Pippin</div>
+								<div class="experience-details">Year: 2013</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Assistant Stage Manager
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-5">
+								<%= image_tag "posters/mother-hicks.jpg", class: "experience-poster"%>
+							</div>
+							<div class="col-md-7">
+								<div class="experience-title">Mother Hicks</div>
+								<div class="experience-details">Year: 2012</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Paint Crew
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-5">
+								<%= image_tag "posters/jb.jpg", class: "experience-poster"%>
+							</div>
+							<div class="col-md-7">
+								<div class="experience-title">J.B</div>
+								<div class="experience-details">Year: 2012</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Set Construction
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<hr/>
+				
+				<div class="company">
+					Related Course Work
+				</div>
+				<div class="row">
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="experience-title">Call of The Revolution</div>
+								<div class="experience-details">Year: 2015</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Director
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="experience-title">Suddenly Last Summer</div>
+								<div class="experience-details">Year: 2015</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Director
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="experience-item col-md-4">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="experience-title">Agnes of God</div>
+								<div class="experience-details">Year: 2015</div>
+								<br/>
+								<div class="experience-details">
+									Title: 
+									<br/>Director
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+     	</div>
+			
+</div>

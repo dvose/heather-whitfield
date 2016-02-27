@@ -1,0 +1,12 @@
+{
+  "name": "heather-resume",
+  "devDependencies" : {
+    "bower": "~1.2.8"
+  },
+  "dependencies": {
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10"
+  }
+}

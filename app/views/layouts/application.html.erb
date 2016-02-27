@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  		<!-- CHANGE TITLE AND META ACCORDINGLY -->
+		<title>Heather Whitfield</title>
+		<meta name="description" content="Faiz Malkani, Designer and Developer for Android and the Web">
+		<meta name="keywords" content="faiz, malkani, android, ui, ux, frontend">
+		<meta name="copyright" content="Copyright © 2014 Faiz Malkani. All Rights Reserved.">
+		<meta name="author" content="Faiz Malkani">
+		<meta name="theme-color" content="#ffffff">
+		<meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
+		<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application'%>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="body" style="width: 100%">
+			<!-- COVER IMAGE AND FLOATING BUTTON -->
+			<div class="cover-image"></div>	
+			<div class="desktop-fab-container ">
+				<!-- REPLACE WITH YOUR APP URL -->
+     			<a href="YOUR_APP_URL_HERE">
+     				<paper-fab class="wow fadeInUp desktop-fab" icon="shop"></paper-fab>
+     			</a>
+			</div>
+			<% if !@nav_toggle.nil?  && !@nav_toggle%>
+			<%else%>
+				<div class="nav-card">
+					<div class="icon-and-title-flex">
+						<a href="/"><%= image_tag "cover-photo.jpg", class: 'nav-img appicon' %></a>
+						<div class="title-container">
+							<!-- REPLACE WITH YOUR APP NAME -->
+							<a href="/"><span class="text-title">Heather Whitfield</span></a>
+							<br><div class="intertext-padding"></div>
+							<!-- REPLACE WITH YOUR DEV NAME -->
+							<span class="text-subtitle">Director / Stage Manager</span>
+							
+							<!-- REPLACE WITH YOUR APP PRICE -->
+
+							<span class="nav text-subtitle">
+								<a href="/resume">Resume</a> | 
+								<a href="/education">Education</a> | 
+								<a href="/experience">Experience</a> | 
+								<a href="/portfolio">Portfolio</a> | 
+								<a href="/references">References</a> | 
+								<a href="/contact">Contact</a>
+							</span>
+						</div>	
+					</div>
+				</div>
+				<div class="nav-card-mobile">
+					<div class="icon-and-title-flex">
+						<div class="title-container">
+							<!-- REPLACE WITH YOUR APP NAME -->
+							<span class="text-title"><a href="/">Heather Whitfield</a></span>
+							<br><div class="intertext-padding"></div>
+							<!-- REPLACE WITH YOUR DEV NAME -->
+							<span class="text-subtitle">Director / Stage Manager</span>
+							<br><div class="intertext-padding"></div>
+							<!-- REPLACE WITH YOUR APP PRICE -->
+							<span class="nav text-subtitle">
+								<a href="/resume">Resume</a> | 
+								<a href="/education">Education</a> | 
+								<a href="/experience">Experience</a> | 
+								<a href="/portfolio">Portfolio</a> | 
+								<a href="/references">References</a> | 
+								<a href="/contact">Contact</a>
+							</span>
+						</div>	
+					</div>
+				</div>
+			<%end%>
+		<%= yield %>
+		<!-- SPACE BELOW DETAILS -->	
+		<div class="empty-space">
+			<div class="meta-container wow fadeInUp">
+				<div class="wow fadeInUp detail-item watermark credits">
+						<span class="text-description credits-text" style="color: #ffffff">Website by Dustin Vose</span>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+</body>
+</html>
