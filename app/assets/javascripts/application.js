@@ -10,7 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require webcomponentsjs/webcomponents-lite
 //= require jquery
 //= require jquery_ujs
 //= require slick
@@ -18,15 +17,3 @@
 //= require_tree .
 
 new WOW().init();
-
-$(function()
-{	
-	$('.carousel').slick({
-		infinite: true,
-		slidesToShow: 1,
-	    slidesToScroll: 1,
-	    autoplay: true,
-		autoplaySpeed: 3000,
-		fade: true,
-	});
-});
