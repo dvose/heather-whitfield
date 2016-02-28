@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require slick
+//= require wow
 //= require_tree ../../../vendor/assets/.
 //= require_tree .
 

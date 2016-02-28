@@ -8,13 +8,12 @@
 		<meta name="author" content="Dustin Vose">
 		<meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/polymer/0.5.6/polymer.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application'%>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -83,43 +82,6 @@
 				</div>
 			</div>	
 		</div>
-		<script>
-			
-			$(function()
-			{	
-				$('.carousel').slick({
-					infinite: true,
-					slidesToShow: 1,
-				    slidesToScroll: 1,
-				    autoplay: true,
-					autoplaySpeed: 3000,
-					fade: true,
-				});
-			});
-			
-			$("#contact_form").bind('ajax:success', function(e, data, status, xhr) {
-		    if(data['status'] == "error"){
-		    	var message = document.createElement('div');
-		    	message.className = 'alert alert-danger';
-		    	message.innerHTML = data['message'];
-		  			
-		    	$('#result').append(message);
-		    }
-		    
-		     else if(data['status'] == "success"){
-		    	var message = document.createElement('div');
-		    	message.className = 'alert alert-success';
-		    	message.innerHTML = 'data['message'];
-		  			
-		    	$('#result').append(message);
-		    }
-		    console.log(data);
-		    console.log(status);
-		  }).bind('ajax:error', function(xhr, status, error) {
-		    console.log(error);
-		    console.log(status);
-		  });
-		</script>
 	</div>
 </body>
 </html>
