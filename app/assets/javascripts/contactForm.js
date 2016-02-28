@@ -12,7 +12,8 @@ $(function() {
     	var message = document.createElement('div');
     	message.className = 'alert alert-success';
     	message.innerHTML = '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>' + data['message'];
-  			
+  		$('#contact_form').find('input[type=text]').val('');
+  		$('#contact_form').find('textarea').val('');
     	$('#result').append(message);
     }
     console.log(data);
